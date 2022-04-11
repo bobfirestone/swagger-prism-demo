@@ -1,0 +1,15 @@
+@base_url = http://localhost:4010
+
+### static index
+GET {{base_url}}/pets HTTP/1.1
+
+### dynamic index
+GET {{base_url}}/pets HTTP/1.1
+Prefer: dynamic=true
+
+### static single
+GET {{base_url}}/pets/1082403 HTTP/1.1
+
+### dynamic single
+GET {{base_url}}/pets/1082403 HTTP/1.1
+Prefer: dynamic=true
