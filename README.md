@@ -4,7 +4,7 @@
 $ prism mock petstore-expanded.yaml -h 0.0.0.0
 ```
 
-The `-h 0.0.0.0` flag in needed when deploying to docker because the default bind is to `localhost` and can not be accessed outside the container.
+The `-h 0.0.0.0` flag in needed when deploying to docker because the default `mock` command binds to `localhost` and localhost can not be accessed outside the container.
 
 
 ### References
